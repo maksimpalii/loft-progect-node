@@ -1,0 +1,372 @@
+.page-works {
+  width: 100%;
+
+}
+
+.scrool-down__style-page-works{bottom: -80px;}
+
+.triangle-left_color_dark {
+  border-bottom-color: rgba(13, 17, 32, 0.85);
+}
+
+.triangle-right_color_dark {
+  border-right-color: rgba(13, 17, 32, 0.85);
+}
+
+.triangle-bottom {
+  background: rgba(13, 17, 32, 0.85);
+  width: 100%;
+  height: 185px;
+  position: absolute;
+  bottom: -185px;
+}
+
+.c-section-slider-title {
+  width: 100%;
+}
+
+.section-slider__container {
+  position: relative;
+  height: 185px;
+}
+
+.sl-cont-inn__star {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.star-works__img {
+  position: absolute;
+  left: -170px;
+  top: -75px;
+  fill: #fff;
+  z-index: 2;
+  opacity: 0.1;
+  transform-origin: center;
+  transform: rotate(189deg) scale(1.25);
+  @include iphone{
+    transform: rotate(189deg) scale(0.7);
+    left:-200px;
+    top:-100px;
+  }
+}
+
+.sl-cont-inn__title {
+  font-family: 'SansusWebissimo';
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-top: 55px;
+  font-size: 63px;
+  z-index: 2;
+  position: absolute;
+  color: #fff;
+  line-height: 69px;
+  @include iphone{
+    font-size: 53px;
+  }
+}
+
+@import 'common/works-slider';
+
+.sl-cont-inn__star {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.svg-works__img {
+  position: absolute;
+  left: -170px;
+  top: -75px;
+  fill: #fff;
+  z-index: 2;
+  opacity: 0.1;
+  transform-origin: center;
+  transform: rotate(189deg) scale(1.25);
+}
+
+.section-speakme__info {
+  position: relative;
+  height: 185px;
+}
+
+.slider-star__inner {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.slider-star__title {
+  font-family: 'SansusWebissimo';
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-top: 55px;
+  font-size: 63px;
+  z-index: 2;
+  position: absolute;
+  color: #fff;
+  line-height: 69px;
+}
+
+.section-speakme {
+  height: 1355px;
+  position: relative;
+  @include iphone {
+    height: auto;
+    padding-bottom: 500px;
+  }
+}
+
+.com-img__img {
+  width: 100%;
+}
+
+.section-speakme__background {
+  background-image: url(/assets/img/lighthouse-big.jpg);
+  background-size: 1900px;
+  background-position: center;
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.section-speakme__comments {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  @include iphone {
+    flex-direction: column;
+  }
+
+}
+
+.com-items__comments {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  @include iphone{
+    width: 100%;
+  }
+}
+
+.com-item__img {
+  width: 77px;
+  height: 77px;
+  margin: 0 auto;
+}
+
+.com-item__text {
+  font-size: 16px;
+  font-family: "Roboto-Italic";
+  color: #fff;
+  line-height: 26px;
+  margin-left: 10px;
+  margin-top: 12px;
+  &:before {
+    content: "\201C";
+    font: 226px "Times New Roman";
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 17px;
+    z-index: -1;
+  }
+}
+
+.com-item__sign {
+  width: 100%;
+  margin: 18px auto;
+  text-align: center;
+}
+
+.com-sign-in__name {
+  font-size: 16px;
+  font-family: "Roboto-BoldItalic";
+  color: #fff;
+  line-height: 24px;
+}
+
+.com-sign-in__position {
+  font-size: 16px;
+  font-family: "Roboto-Italic";
+  color: #fff;
+  line-height: 24px;
+}
+
+.section-speakme__contacts {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.form-works__box{
+  display: flex;
+  flex-direction: column;
+
+}
+.form-works__form {
+  width: 380px;
+  background-color: rgba(255, 255, 255, 0.0);
+  display: block;
+  margin: 49px auto 0 auto;
+  height: 420px;
+  overflow: hidden;
+}
+.form-works__bg{
+  position: absolute;
+  width: 380px;
+  display: block;
+  height: 514px;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: -1;
+  @include centered();
+
+}
+.form-works__bginn{
+  width: 100%;
+  height: 100%;
+  filter:blur(20px);
+  background-size: 1900px;
+  background-image: url(/assets/img/lighthouse-big.jpg);
+  background-position: 1140px 836px;
+  opacity: 0.8;
+
+}
+.form-inner__title {
+  line-height: 41px;
+  font-size: 35px;
+  font-family: "SansusWebissimo";
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-top: 38px;
+  &:after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #474b57;
+    margin: 0 auto;
+    margin-top: 21px;
+  }
+}
+
+.form-name, .form-mail {
+  margin: 30px 20px 0px 20px;
+  padding: 12px 16px;
+  height: 21px;
+  width: 308px;
+}
+
+.form-inner {
+
+  #mail {
+    margin-top: 0px;
+  }
+  textarea {
+    resize: none;
+    width: 308px;
+    padding: 12px 16px;
+    height: 106px;
+    margin: 0px 20px 0 20px;
+  }
+  .form-name, .form-mail, textarea {
+    background-color: rgba(255, 255, 255, 0.07);
+    font: 16px "Roboto-Regular";
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+  }
+}
+.error-form{
+  width: 100%;
+  height: 20px;
+  color: #bc0000;
+  display: block;
+  font-size: 12px;
+  padding-left: 20px;
+  line-height: 16px;
+  font-family: "Roboto-Light";
+}
+.form-inner__buttons {
+
+  display: block;
+  width: 100%;
+}
+
+.form-button-in__item {
+  float: left;
+  cursor: pointer;
+  margin: 0;
+  height: 44px;
+  width: 50%;
+
+}
+
+.item_style_send {
+  font: 16px "Roboto-Medium";
+  background: #004cd1;
+  color: #fff;
+  float: left;
+  cursor: pointer;
+  margin: 0;
+  height: 44px;
+  width: 50%;
+  border: none;
+  outline: none;
+  &:hover {
+    background: #083c96;
+  }
+}
+
+.item_style_clear {
+  font: 16px "Roboto-Regular";
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.5);
+  float: left;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+  outline: none;
+  height: 44px;
+  width: 50%;
+}
+
+.scroll-up {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 507px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.scroll-up__svg {
+  cursor: pointer;
+  width: 26px;
+  height: 28px;
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.rotate_180 {
+  transform: rotate(180deg);
+}

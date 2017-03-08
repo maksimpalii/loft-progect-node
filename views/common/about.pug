@@ -1,0 +1,88 @@
+block content
+    .wrapper-about
+        header.section-header
+            .socials-about
+                include ../common/_soc_widget
+            include ../common/_menu_gamburger
+        section.section-profile
+            .section-profile__bg
+            .profile-container
+                .profile-container__info
+                    .profile-container__photo
+                        .profile-container__image
+                            img(src="/assets/img/myphoto.jpg" class="rounded-image")
+                    .profile-container__name Максим Палий
+                    .profile-container__caption Личный сайт веб разработчика
+            .profile-container__bgicons
+                .profile-container__icons
+                    svg.profile-container__stars(preserveAspectRatio="xMinYMin meet")
+                        use.star-icon(xlink:href="assets/img/sprite/sprite/img.svg#stars1")
+            a.scroll-down(href='#about')
+                svg.scroll-down__svg(preserveaspectratio='xMinYMin meet')
+                    use(xlink:href='assets/img/sprite/sprite/img.svg#arrow_down')
+            .triangle-left
+            .triangle-right
+        section.section-about
+            .about-profile
+                .about-profile__block
+                    .about-profile__h1 Обо мне
+                    svg.about-profile__bg(preserveAspectRatio="xMinYMin meet")
+                        use(xlink:href="assets/img/sprite/sprite/img.svg#stars2")
+                .about-profile__info
+                    .about-profile__img
+                        img(src = ("/assets/img/about_foto.jpg"))
+                    .about-profile__title
+                        span.about-profile__text Кто я
+                    .about-profile__description
+                        .about-profile__description-box
+                            p.about-profile__textin Я веб разработчик из Киева. Мне 31 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p.about-profile__textin Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+
+            .about-skills
+                .about-skills__section
+                    .skills-info__block
+                        span.skills-info__text
+                                             |   Чем я могу быть
+                                             br
+                                             |   вам полезен
+                    .skills-info__desc Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    ul.skills-info__group
+                        li.skills-info__items
+                            .skills-info__title Frontend
+                            +circles('Frontend')
+                        li.skills-info__items
+                            .skills-info__title Backend
+                            +circles('Backend')
+                        li.skills-info__items
+                            .skills-info__title WorkFlow
+                            +circles('WorkFlow')
+
+
+        section.section-map
+            .section-map__container
+                .map-info__title Контакты
+                .map-info__contacts
+                    ul.map-info__list
+                        li.map-info__items.links-item
+                            .map-info__icon.link_skype
+                                svg.map-info__svg(preserveAspectRatio="xMinYMin meet", viewBox="0 0 45 45")
+                                    use(xlink:href="assets/img/sprite/sprite/img.svg#skype_n", x="0", y="0")
+                                a.map-info__link(href="skype:maksim_p.s.") maksim_p.s.
+                            .map-info__icon.link_mail
+                                svg.map-info__svg(preserveAspectRatio="xMinYMin meet", viewBox="0 0 45 45")
+                                    use(xlink:href="assets/img/sprite/sprite/img.svg#envelope_n", x="0", y="0")
+                                a.map-info__link(href="mailto:maksim.palii@gmail.com") maksim.palii@gmail.com
+                        li.map-info__items
+                            .map-info__icon.link_phone
+                                svg.map-info__svg(preserveAspectRatio="xMinYMin meet", viewBox="0 0 45 45")
+                                    use(xlink:href="assets/img/sprite/sprite/img.svg#phone_n", x="0", y="0")
+                                a.map-info__link(href="tel:+380997422050") +380 99 742 20 50
+                            .map-info__icon.link_adress
+                                svg.map-info__svg(preserveAspectRatio="xMinYMin meet", viewBox="0 0 45 45")
+                                    use(xlink:href="assets/img/sprite/sprite/img.svg#map_n", x="0", y="0")
+                                a.map-info__link(href="#", target="_blank") г. Киев, пр-т Оболонский, д.40
+
+            .section-map__google-map#google-map
+                include ../common/_google-map
+        include ../common/_footer
+

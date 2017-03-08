@@ -1,0 +1,30 @@
+block content
+    .wrapper-home
+        .background-img#parallax
+            video.background__video(autoplay='', loop='', poster='/assets/img/background-night.jpg')
+                source.video__source(src='/assets/img/night.mp4', type='video/mp4')
+            .background__img
+        header.header
+            .button_authorization
+                a.button_authorization__link(href="#") Авторизоваться
+        .flip-container
+            .flipper#flipper
+                .main-container
+                    .container
+                        .info-box
+                            .info-box__photo
+                                .info-box__imageround
+                                    img(src="/assets/img/myphoto.jpg" class="rounded-image")
+
+                            .info-box__name Максим Палий
+                            .info-box__caption Личный сайт веб разработчика
+                            include ../common/_soc_widget
+                        +nav('menu-home', {
+                            "Мои работы": "works.html",
+                            "Обо мне": "about.html",
+                            "Блог": "blog"
+                        })
+                    include ../common/_forma
+        .flip-out
+        footer.footer
+            .footer__copiright © Максим Палий | создано с любовью в LoftSchool | 2017

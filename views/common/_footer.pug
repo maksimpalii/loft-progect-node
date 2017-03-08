@@ -1,0 +1,23 @@
+footer.section-footer
+    .section-footer__container
+        .section-footer__col
+            .section-footer__slogan
+                .section-footer__slogantext Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .section-footer__col
+            .section-footer__nav
+                +nav-footer('footer-menu', {
+                    "Мои работы": "works",
+                    "Обо мне": "about",
+                    "Блог": "blog",
+                    "Авторизация": "./",
+                })
+            .section-footer__soc
+                include ../common/_soc_widget
+        .section-footer__col
+            .section-footer__contact
+                .section-footer__text maksim_p.s.
+                .section-footer__text maksim.palii@gmail.com
+                .section-footer__text +380 99 742 20 50
+                .section-footer__text г. Киев, пр-т Оболонский, д.40
+    .section-footer__copiright
+        .section-footer__copirighttext © Максим Палий | Создано с любовью в LoftSchool | 2016

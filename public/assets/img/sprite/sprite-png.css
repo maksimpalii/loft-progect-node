@@ -1,0 +1,168 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-blip_cloud {
+  background-image: url(sprite.png);
+  background-position: -60px 0px;
+  width: 60px;
+  height: 60px;
+}
+.icon-deezer_cloud {
+  background-image: url(sprite.png);
+  background-position: 0px -180px;
+  width: 60px;
+  height: 60px;
+}
+.icon-delicious_cloud {
+  background-image: url(sprite.png);
+  background-position: 0px -60px;
+  width: 60px;
+  height: 60px;
+}
+.icon-deviant_cloud {
+  background-image: url(sprite.png);
+  background-position: -60px -60px;
+  width: 60px;
+  height: 60px;
+}
+.icon-digg_cloud {
+  background-image: url(sprite.png);
+  background-position: -120px 0px;
+  width: 60px;
+  height: 60px;
+}
+.icon-facebook_cloud {
+  background-image: url(sprite.png);
+  background-position: -120px -60px;
+  width: 60px;
+  height: 60px;
+}
+.icon-feed_cloud {
+  background-image: url(sprite.png);
+  background-position: 0px -120px;
+  width: 60px;
+  height: 60px;
+}
+.icon-ff_cloud {
+  background-image: url(sprite.png);
+  background-position: -60px -120px;
+  width: 60px;
+  height: 60px;
+}
+.icon-flickr_cloud {
+  background-image: url(sprite.png);
+  background-position: -120px -120px;
+  width: 60px;
+  height: 60px;
+}
+.icon-flinkedin_cloud {
+  background-image: url(sprite.png);
+  background-position: -180px 0px;
+  width: 60px;
+  height: 60px;
+}
+.icon-gtalk_cloud {
+  background-image: url(sprite.png);
+  background-position: -180px -60px;
+  width: 60px;
+  height: 60px;
+}
+.icon-lastfm_cloud {
+  background-image: url(sprite.png);
+  background-position: -180px -120px;
+  width: 60px;
+  height: 60px;
+}
+.icon-mail_cloud {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 60px;
+  height: 60px;
+}
+.icon-myspace_cloud {
+  background-image: url(sprite.png);
+  background-position: -60px -180px;
+  width: 60px;
+  height: 60px;
+}
+.icon-picasa_cloud {
+  background-image: url(sprite.png);
+  background-position: -120px -180px;
+  width: 60px;
+  height: 60px;
+}
+.icon-plurk_cloud {
+  background-image: url(sprite.png);
+  background-position: -180px -180px;
+  width: 60px;
+  height: 60px;
+}
+.icon-reddit_cloud {
+  background-image: url(sprite.png);
+  background-position: -240px 0px;
+  width: 60px;
+  height: 60px;
+}
+.icon-skype_cloud {
+  background-image: url(sprite.png);
+  background-position: -240px -60px;
+  width: 60px;
+  height: 60px;
+}
+.icon-stumble_cloud {
+  background-image: url(sprite.png);
+  background-position: -240px -120px;
+  width: 60px;
+  height: 60px;
+}
+.icon-technorati_cloud {
+  background-image: url(sprite.png);
+  background-position: -240px -180px;
+  width: 60px;
+  height: 60px;
+}
+.icon-tumblr_cloud {
+  background-image: url(sprite.png);
+  background-position: 0px -240px;
+  width: 60px;
+  height: 60px;
+}
+.icon-twitter_cloud {
+  background-image: url(sprite.png);
+  background-position: -60px -240px;
+  width: 60px;
+  height: 60px;
+}
+.icon-vimeo_cloud {
+  background-image: url(sprite.png);
+  background-position: -120px -240px;
+  width: 60px;
+  height: 60px;
+}
+.icon-wordpress_cloud {
+  background-image: url(sprite.png);
+  background-position: -180px -240px;
+  width: 60px;
+  height: 60px;
+}
+.icon-youtube_cloud {
+  background-image: url(sprite.png);
+  background-position: -240px -240px;
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,39 @@
+block variables
+include ./common/_mixins
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(content="" name= `${author}`)
+    meta(content="" name= `${description}`)
+    meta(content="" name= `${keywords}`)
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    //- favicon block start
+    //- favicon block end
+
+    link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/css/app.css')
+    link(rel='stylesheet' href='/assets/img/sprite/sprite-png.css')
+    script(src='/assets/js/foundation.js' defer)
+
+
+
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+
+  body(class= `${bodyClass}` )
+    .preloader
+      .preloader__spinner
+        svg.night-animation(width='120', height='120', viewbox='0 0 120 120', preserveaspectratio='xMaxYMax meet')
+          g.group
+            circle.small.circle(r='35', cx='50%', cy='50%', fill='none', stroke-dasharray='1 220', stroke-linecap='round')
+            circle.big.circle(r='25', cx='50%', cy='50%', fill='none', stroke-dasharray='0 157')
+            text.loading-value(x='50%', y='50%', fill='#000') 0%
+
+    block content
+    script(src='/assets/js/app.js' defer)

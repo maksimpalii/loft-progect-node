@@ -1,0 +1,92 @@
+{
+  "Globvars": {
+      "name": "Максим Палий",
+      "hwoiam": "Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!"
+  },
+  "Pages": {
+    "home": {
+      "title": "Home",
+      "author": "Максим Палий",
+      "description": "описание",
+      "keywords": "ключевые слова",
+      "bodyClass": "page-home"
+    },
+    "about": {
+      "title": "Portfolio",
+      "author": "Максим Палий",
+      "description": "описание портфолио",
+      "keywords": "ключевые слова портфолио",
+      "bodyClass": "page-about"
+    },
+    "works": {
+      "title": "Works",
+      "author": "Максим Палий",
+      "description": "описание Works",
+      "keywords": "ключевые слова Works",
+      "bodyClass": "page-works"
+    },
+    "blog": {
+      "title": "Blog",
+      "author": "Максим Палий",
+      "description": "описание блога",
+      "keywords": "ключевые слова блога",
+      "bodyClass": "page-blog"
+    }
+  },
+  "Circles" : {
+    "Frontend" : [
+      {
+        "name": "HTML5",
+        "counts": "10"
+      },
+      {
+        "name": "CSS3",
+        "counts": "95"
+      },
+      {
+        "name": "JavaScript & Jquery",
+        "counts": "85"
+      }
+    ],
+    "Backend" : [
+      {
+        "name": "PHP",
+        "counts": "75"
+      },
+      {
+        "name": "mySQL",
+        "counts": "65"
+      },
+      {
+        "name": "Node.js & npm",
+        "counts": "55"
+      },
+      {
+        "name": "Mongo.db",
+        "counts": "45"
+      }
+    ],
+    "WorkFlow" : [
+      {
+        "name": "Git",
+        "counts": "35"
+      },
+      {
+        "name": "Gulp",
+        "counts": "25"
+      },
+      {
+        "name": "Bower",
+        "counts": "15"
+      }
+    ],
+    "None" : [
+      {
+        "name": "undefined",
+        "counts": "0"
+      }
+    ]
+  }
+
+
+}

@@ -1,0 +1,644 @@
+%clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.page-about {
+  width: 100%;
+}
+
+.class {
+  @include testM(#fff, #000);
+  @extend %clearfix;
+  opacity: $varCircHtml5;
+}
+
+
+
+.section-header {
+  position: absolute;
+  width: 100%;
+  display: block;
+  top: 0;
+}
+
+.socials-about {
+  margin: 29px 0 0 20px;
+  left: 0;
+  z-index: 10;
+  position: absolute;
+  @include iphone {
+    margin: 12px 0 0 5px;
+  }
+
+}
+
+.section-profile {
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+  @include tablets {
+    height: 66vh;
+  }
+  @include iphone {
+    height: 750px;
+  }
+}
+
+.section-profile__bg {
+  width: 100%;
+  height: 100%;
+  background: url("/assets/img/back_main.jpg") no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  min-height: 160vh;
+  @include iphone{
+    min-height: 135vh;
+  }
+}
+.wrapper-works{
+  .section-profile__bg{
+    @include iphone{
+      min-height: 175vh;
+    }
+  }
+}
+.profile-container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.profile-container__info {
+  padding: 62px 70px;
+  @include iphone {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.profile-container__photo {
+  width: 143px;
+  height: 143px;
+  margin: -65px auto 0px auto;
+  @include iphone {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.profile-container__image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+.profile-container__bgicons{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  z-index: -1;
+}
+.profile-container__icons {
+  width: 460px;
+  height: 295px;
+  position: absolute;
+  @include centered(both);
+}
+
+.profile-container__stars {
+  fill: #fff;
+  opacity: .07;
+  width: 460px;
+  height: 295px;
+  position: absolute;
+  left: -25px;
+  top: -50px;
+  z-index: -1;
+  @include tablets {
+    transform: scale(0.70);
+
+  }
+  @include iphone {
+    transform: scale(0.80);
+
+  }
+}
+
+.profile-container__name {
+  font-family: 'Roboto-Medium';
+  margin: 20px 0 6px 0;
+  font-size: 35px;
+  white-space: nowrap;
+  @include iphone {
+    font-size: 30px;
+  }
+}
+
+.profile-container__caption {
+  opacity: 0.8;
+  text-align: center;
+}
+
+.scroll-down {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  @include tablets{bottom: 8%;}
+
+}
+
+.scroll-down__svg {
+  cursor: pointer;
+  width: 26px;
+  height: 28px;
+  fill: rgba(255, 255, 255, 0.7);
+  &:hover {
+    fill: rgba(255, 255, 255, 1);
+  }
+  @include iphone {
+    width: 40px;
+    height: 40px
+  }
+}
+
+.triangle-left {
+  height: 0;
+  border-bottom: 165px solid #f2f0e8;
+  border-right: 50vw solid transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include pc {
+    border-bottom: 100px solid #f2f0e8;
+  }
+  @include iphone {
+    border-bottom: 50px solid #f2f0e8;
+  }
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-right: 50vw solid #eae8e2;
+  border-top: 165px solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @include pc {
+    border-top: 100px solid transparent;
+  }
+  @include iphone {
+    border-top: 50px solid transparent;
+  }
+}
+
+.section-about {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.about-profile {
+  background-color: #f2f0e8;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  @include pc {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  @include tablets {
+    width: 100%;
+    padding-bottom: 75px;
+
+  }
+  @include iphone {
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+}
+
+.about-profile__title {
+  justify-content: center;
+  @include tablets {
+    margin-top: 70px;
+  }
+  @include iphone {
+    margin-top: 35px;
+  }
+}
+
+.about-profile__h1 {
+  font-family: 'SansusWebissimo';
+  text-transform: uppercase;
+  padding-left: 120px;
+  font-size: 63px;
+  color: #474b57;
+  @include pc {
+    padding: 0;
+    text-align: center;
+  }
+  @include iphone {
+    font-size: 48px;
+  }
+
+}
+
+.about-profile__bg {
+  position: absolute;
+  left: 64px;
+  top: -34px;
+  fill: #1056d1;
+  opacity: 0.1;
+  transform-origin: center;
+  transform: rotate(189deg) scale(1.25);
+  @include pc {
+    transform: rotate(189deg) scale(0.85);
+    left: 150px;
+  }
+  @include tablets {
+    left: 220px;
+    top: -10px;
+  }
+  @include iphone {
+    display: none;
+  }
+}
+
+.about-profile__block {
+  display: flex;
+  justify-content: center;
+  @include tablets {
+    padding-top: 34px;
+  }
+}
+
+.about-profile__info {
+  width: 480px;
+  align-items: center;
+  @include pc {
+    width: auto;
+    padding: 32px 65px;
+  }
+  @include tablets {
+    width: calc((100vw / 12) * 8);
+    padding: 32px 0 0 0;
+    margin: 0 auto;
+  }
+  @include iphone {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.about-profile__img {
+  margin: 20px 0 30px 0;
+  justify-content: center;
+  display: flex;
+  align-items: start;
+  overflow: hidden;
+}
+
+.about-profile__text {
+  color: #474b57;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'SansusWebissimo';
+  display: block;
+  text-transform: uppercase;
+  @include underline;
+  @include iphone {
+    font-size: 28px;
+  }
+}
+
+.about-profile__description {
+  margin-top: 13px;
+  margin-bottom: 35px;
+  @include iphone {
+    margin-top: 30px;
+  }
+}
+
+.about-profile__description-box {
+  padding: 15px;
+  @include pc {
+    padding: 0 15px;
+  }
+}
+
+.about-profile__textin {
+  color: #474b57;
+  line-height: 24px;
+  margin-top: 10px;
+  &:first-child {
+    margin: 0;
+  }
+  @include iphone {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.about-skills {
+  background-color: #eae8e2;
+  width: 50%;
+  overflow: hidden;
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.about-skills__section {
+  @include tablets {
+    width: calc((100vw / 16) * 11);
+    margin: 0 auto;
+    text-align: center;
+  }
+  @include iphone {
+    width: 100%;
+  }
+}
+
+.skills-info__block {
+  display: block;
+  text-align: center;
+  padding-top: 13px;
+  @include underline;
+}
+
+.skills-info__text {
+  color: #474b57;
+  font-size: 35px;
+  font-family: 'SansusWebissimo';
+  text-transform: uppercase;
+  @include iphone {
+    font-size: 28px;
+  }
+}
+
+.skills-info__desc {
+  padding: 36px 50px 0 38px;
+  color: #474b57;
+  line-height: 24px;
+  @include pc {
+    padding-right: 20px;
+  }
+  @include iphone {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 10px;
+    text-align: left;
+  }
+}
+
+.skills-info__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablets {
+    justify-content: center;
+  }
+  @include iphone {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.skills-info__group {
+  padding: 15px 10px 35px 40px;
+  @include pc {
+    padding-right: 0;
+  }
+  @include iphone {
+    padding: 0 10px;
+  }
+}
+
+.skills-info__items {
+  list-style-type: none;
+  padding-top: 25px;
+  @include pc {
+  }
+  @include iphone {
+    padding-top: 15px;
+  }
+}
+
+.skill-core__title {
+  font-family: 'Roboto-Medium';
+  font-size: 28px;
+  color: #474b57;
+}
+
+.skills-info__title {
+  font-family: 'Roboto-Medium';
+  font-size: 28px;
+  color: #474b57;
+  @include tablets {
+    font-size: 25px;
+  }
+}
+
+.skills-info__item {
+  list-style-type: none;
+  padding: 15px 0;
+  @include iphone {
+    padding: 20px 0 20px 0;
+  }
+
+}
+
+.skills-info__content {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-right: 40px;
+  @include pc {
+    width: 110px;
+    height: 110px;
+    margin-right: 37px;
+  }
+  @include tablets {
+    width: 130px;
+    height: 130px;
+  }
+  @include iphone {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+}
+
+.skills-info__circle {
+  width: 120px;
+  height: 120px;
+  @include tablets {
+    width: 130px;
+    height: 130px;
+  }
+  @include iphone {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.skills-info__circle-under {
+  stroke: #dfdcd5;
+  stroke-dasharray: 0;
+  stroke-width: 20;
+  fill: none;
+  @include pc {
+    transform: scale(0.92);
+  }
+}
+
+.skills-info__circle-above {
+  stroke: #1056d1;
+  stroke-width: 20;
+  fill: none;
+  @include pc {
+    transform: scale(0.92);
+  }
+}
+
+.skills-info__name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #243994;
+  font-family: 'Roboto-Medium';
+  font-size: 13.95px;
+}
+
+.section-map {
+  position: relative;
+}
+
+.section-map__container {
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  width: 580px;
+  height: 283px;
+  @include tablets {
+    width: 400px;
+    height: 450px;
+  }
+  @include iphone {
+    position: relative;
+    width: 100%;
+    transform: translate(0, 0);
+    top: auto;
+    left: 0;
+    height: 400px;
+  }
+}
+
+.map-info__title {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #474b57;
+  font-size: 35px;
+  font-family: 'SansusWebissimo';
+  &:after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #474b57;
+    margin: 0 auto;
+    margin-top: 21px;
+  }
+  @include iphone {
+    font-size: 46px;
+    margin-top: 22px;
+  }
+}
+
+.map-info__contacts {
+  padding: 30px 15px;
+}
+
+.map-info__list {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.map-info__items {
+  flex-direction: column;
+  display: flex;
+}
+
+.map-info__icon {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 25px;
+  @include tablets {
+    padding-left: 20px;
+  }
+  @include iphone {
+    margin-bottom: 10px;
+  }
+}
+
+.map-info__link {
+  color: #474b57;
+  text-decoration: none;
+  font-family: 'Roboto-Medium';
+  margin-left: 9px;
+  margin-bottom: 5px;
+}
+
+.map-info__svg {
+  width: 46px;
+  height: 50px;
+  fill: #004cd1;
+}
+
+.section-map__google-map {
+  height: 1095px;
+  width: 100%;
+  @include pc {
+    height: 975px;
+  }
+  @include tablets {
+    height: 1050px;
+  }
+}
+
+@import 'footer';

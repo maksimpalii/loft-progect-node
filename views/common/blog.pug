@@ -1,0 +1,56 @@
+block content
+    .wrapper-blog
+        header.section-header
+            .socials-about
+                include ../common/_soc_widget
+            include ../common/_menu_gamburger
+        section.section-profile.section-profile_style_blog
+            .section-profile__bg.section-profile_bg_blog
+            .profile-container
+                .profile-container__info
+                    .profile-container__photo
+                        .profile-container__image
+                            img(src="/assets/img/myphoto.jpg" class="rounded-image")
+                    .profile-container__name.style_blog-name Блог
+                    .profile-container__caption Статьи, которые я написал
+            .profile-container__bgicons
+                .profile-container__icons
+                    svg.profile-container__stars(preserveAspectRatio="xMinYMin meet")
+            .triangle-left.triangle-left_color_light
+            .triangle-right.triangle-right_color_light
+        section.section-blog
+            .section-blog__container
+                .section-blog__inner
+                    .section-blog__menu
+                        ul.section-blog__list
+                            li.section-blog__item.menu_item_active Самое важное в SASS
+                            li.section-blog__item Приёмы в вёрстке, без которых не обходится ни один сайт
+                            li.section-blog__item Самый необходимый набор Gulp плагинов
+                            li.section-blog__item Почему я выбрал Jade
+                        .menu-blog-nav.display_tablets_yes
+                    //.section-blog__content
+                    //    .section-blog__post
+                    //        .section-blog__title Самое важное в SASS
+                    //        .section-blog__date 22 ноября 2016
+                    //        .section-blog__text
+                    //            p.section-blog__p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                    //            p.section-blog__p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    //            img(src="assets/img/im_blog1.jpg" class="section-blog__img")
+                    //    .section-blog__post
+                    //        .section-blog__title Приёмы в вёрстке, без которых не обходится ни один сайт
+                    //        .section-blog__date 13 ноября 2016
+                    //        .section-blog__text
+                    //            p.section-blog__p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                    //            p.section-blog__p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .section-blog__content
+
+                        each index in db
+                            .section-blog__post
+                                .section-blog__title= index.title
+                                .section-blog__date= index.data
+                                .section-blog__text
+                                    p.section-blog__p= index.body
+
+
+        include ../common/_footer
+

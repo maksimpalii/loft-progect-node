@@ -1,0 +1,54 @@
+
+
+$varCircHtml5: 0.85;
+@mixin testM($var1, $var2) {
+  color: $var1;
+  background: $var2;
+}
+
+@mixin centered($axis:'both'){
+  @if ($axis == 'both'){
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $axis == 'x'{
+    left:50%;
+    transform: translateX(-50%);
+  }
+  @if $axis == 'y'{
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin iphone(){
+  @media screen and (max-width: 480px){
+    @content;
+  }
+}
+@mixin tablets(){
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+@mixin pc(){
+  @media screen and (max-width: 1200px){
+    @content;
+  }
+}
+
+
+@mixin underline {
+  &:after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #474b57;
+    margin: 0 auto;
+    margin-top: 21px;
+    @include pc{margin-top: 10px;}
+    @include iphone{margin-top:24px; }
+  }
+}

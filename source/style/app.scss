@@ -1,0 +1,47 @@
+@import 'common/mixins';
+
+html{
+  font-size: 16px;
+  overflow-x: hidden;
+  @include tablets{
+    font-size: 14px;
+
+  }
+  @include iphone{
+    font-size: 12px;
+
+  }
+}
+
+
+body {
+  width: 1800px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+
+  color: #fff;
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+}
+
+ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+}
+
+@import 'common/_preloader';
+@import 'common/fonts';
+@import 'common/index';
+@import 'common/about';
+@import 'common/works';
+@import 'common/blog';
+@import 'common/_login_widget';
+@import 'common/_menu_widget';
+
+
+

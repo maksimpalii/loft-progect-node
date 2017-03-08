@@ -1,0 +1,78 @@
+block content
+    .wrapper-works
+        header.section-header
+            .socials-about
+                include ../common/_soc_widget
+            include ../common/_menu_gamburger
+        section.section-profile
+            .section-profile__bg
+            .profile-container
+                .profile-container__info
+                    .profile-container__photo
+                        .profile-container__image
+                            img(src="/assets/img/myphoto.jpg" class="rounded-image")
+                    .profile-container__name Максим Палий
+                    .profile-container__caption Личный сайт веб разработчика
+            .profile-container__bgicons
+                .profile-container__icons
+                    svg.profile-container__stars(preserveAspectRatio="xMinYMin meet")
+                        use.star-icon(xlink:href="assets/img/sprite/sprite/img.svg#stars1")
+            a.scroll-down(href='#about')
+                svg.scroll-down__svg(preserveaspectratio='xMinYMin meet')
+                    use(xlink:href='assets/img/sprite/sprite/img.svg#arrow_down')
+            .triangle-left.triangle-left_color_dark
+            .triangle-right.triangle-right_color_dark
+            .triangle-bottom
+        section.section-slider
+            .section-slider__container.sl-cont-inn
+                .sl-cont-inn__star.star-works
+                    svg.star-works__img(preserveAspectRatio="xMinYMin meet")
+                        use(xlink:href="assets/img/sprite/sprite/img.svg#stars2")
+                .sl-cont-inn__title Мои работы
+            include ../common/_works_slider
+        section.section-speakme
+            .section-speakme__background
+            .section-speakme__info.slider-star
+                .slider-star__inner.svg-works
+                    svg.svg-works__img(preserveAspectRatio="xMinYMin meet")
+                        use(xlink:href="assets/img/sprite/sprite/img.svg#stars2")
+                .slider-star__title
+                    | Что обо мне
+                    br
+                    | говорят
+            .section-speakme__comments.com-items
+                .com-items__comments.com-item
+                    .com-item__img.com-img
+                        img.com-img__img(src="assets/img/photo-dima.png")
+                    .com-item__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .com-item__sign.com-sign-in
+                        .com-sign-in__name Ковальчук Дмитрий
+                        .com-sign-in__position — основатель Loftschool
+
+                .com-items__comments.com-item
+                    .com-item__img.com-img
+                        img.com-img__img(src="assets/img/photo-vlad.png")
+                    .com-item__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .com-item__sign.com-sign-in
+                        .com-sign-in__name Сабанцев Владимир
+                        .com-sign-in__position — преподаватель
+            .section-speakme__contacts.form-works
+                .form-works__box
+                    form.form-works__form.form-inner
+                        .form-inner__title Связаться со мной
+                        input#name.input(placeholder='Ваше имя', name='name', class='form-name')
+                        .error-form.error-form_name
+                        input#mail.input(placeholder='Ваш email', name='mail', class='form-mail')
+                        .error-form.error-form_mail
+                        textarea#message.textarear(placeholder='Ваше сообщение', name='message')
+                        .error-form.error-form_text
+                    .form-inner__buttons.form-button-in
+                        button.form-button-in__item.item_style_send Отправить
+                        button.form-button-in__item.item_style_clear Отчистить
+                    .form-works__bg
+                        .form-works__bginn
+                a.scroll-down.scrool-down__style-page-works(href='#about')
+                    svg.scroll-down__svg.rotate_180(preserveaspectratio='xMinYMin meet')
+                        use(xlink:href='assets/img/sprite/sprite/img.svg#arrow_down')
+
+        include ../common/_footer
